@@ -182,7 +182,7 @@ namespace littleSnake
             int moveX;
             int moveY;
             g[tail.getX(), tail.getY()].setBodyPart(false);
-            g[tail.getX(),tail.getY()].BackColor=Color.LightGray;
+            g[tail.getX(), tail.getY()].BackColor = Color.LightGray;
             while (tmp != head)
             {
                 moveX = tmp.getX();
@@ -301,14 +301,15 @@ namespace littleSnake
                 }
             }
         }
-        
+
         private void changeDirection(object sender, KeyEventArgs e)
         {
-            if(e.KeyData== Keys.C && !bot)
+            if (e.KeyData == Keys.C && !bot)
             {
                 bot = true;
                 startNewGame();
-            }else if(e.KeyData == Keys.C && bot)
+            }
+            else if (e.KeyData == Keys.C && bot)
             {
                 bot = false;
                 startNewGame();

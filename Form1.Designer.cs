@@ -43,7 +43,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(525, 525);
+            ClientSize = new Size(560, 560);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Snake";
