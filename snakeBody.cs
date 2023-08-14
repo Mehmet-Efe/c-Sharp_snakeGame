@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace littleSnake
 {
+
+    //creting linkList for snake body
     class body
     {
         int x, y;
@@ -28,6 +30,7 @@ namespace littleSnake
         public void setY(int y) { this.y = y; }
     }
 
+    //
     class snake
     {
         body head;
@@ -75,7 +78,6 @@ namespace littleSnake
             }
             return bodyLocations;
         }
-
 
         public body getTail()
         {

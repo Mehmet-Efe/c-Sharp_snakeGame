@@ -9,6 +9,7 @@ namespace littleSnake
     internal class gameboard : Panel
     {
 
+        //Give black line to every Panel
         public gameboard()
         {
             SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw 
@@ -22,6 +23,7 @@ namespace littleSnake
             e.Graphics.DrawRectangle(Pens.Black, 0, 0, ClientSize.Width+1 , ClientSize.Height+1);
         }
 
+        //creating needed required variables
         private bool isFood;
         private bool isBodyPart;
 

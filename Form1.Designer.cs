@@ -48,7 +48,7 @@
             Name = "Form1";
             Text = "Snake";
             Load += Form1_Load;
-            KeyPress += changeDirection;
+            KeyDown += changeDirection;
             ResumeLayout(false);
         }
 
