@@ -30,7 +30,7 @@ namespace littleSnake
         public void setY(int y) { this.y = y; }
     }
 
-    //
+
     class snake
     {
         body head;

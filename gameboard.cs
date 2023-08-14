@@ -12,7 +12,7 @@ namespace littleSnake
         //Give black line to every Panel
         public gameboard()
         {
-            SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw 
+            SetStyle(ControlStyles.UserPaint | ControlStyles.ResizeRedraw
                 | ControlStyles.DoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
         }
 
@@ -20,7 +20,7 @@ namespace littleSnake
         {
             using (SolidBrush brush = new SolidBrush(BackColor))
                 e.Graphics.FillRectangle(brush, ClientRectangle);
-            e.Graphics.DrawRectangle(Pens.Black, 0, 0, ClientSize.Width+1 , ClientSize.Height+1);
+            e.Graphics.DrawRectangle(Pens.Black, 0, 0, ClientSize.Width + 1, ClientSize.Height + 1);
         }
 
         //creating needed required variables
@@ -29,7 +29,7 @@ namespace littleSnake
 
         public void setIsFood(bool isFood) { this.isFood = isFood; }
 
-        public bool getIsFood() { return  this.isFood; }
+        public bool getIsFood() { return this.isFood; }
 
         public void setBodyPart(bool isBodyPart)
         {
